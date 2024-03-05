@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    min-height: 10vh;
+}
+
+nav .navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+}
+
+nav .navbar-brand:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    filter: blur(2px);
+    transition: .5s;
+}
+
+nav .navbar, .navbar-expand-lg, .bg-body-tertiary{
+    background: url("img/background-dark.jpg");
+    background-size: cover;
+}
+
+nav .nav-item .nav-link{
+    color: white;
+    transition: 1s;
+}
+
+nav .nav-item .nav-link:hover{
+    filter: blur(1px);
+    transition: .5s;
+}
+
+nav .container-fluid{
+    width: 80%;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: block;
+    position: relative;
+    background: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0% 100%);*/
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+    /*clip-path: ellipse(100% 92% at 30% 5%);*/
+}
+
+main h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-top: 35vh;
+    font-size: 7rem;
+    font-weight: 100;
+    color: white;
+}
+
+main h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#why{
+    width: 100%;
+    min-height: 30vh;
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: white;
+    padding-top: 10vh;
+}
+
+#why .container .row .col img{
+    height: 10vh;
+}
+
+#why .container .row .col h1{
+    padding-top: 5vh;
+    font-size: 2rem;
+}
+
+/*
+#gallery{
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+    padding-top: 10vh;
+}
+
+#gallery img{
+    display: block;
+    position: relative;
+    width: 20%;
+    float: left;
+}
+*/
+
+#contact{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    position: relative;
+    background-color: whitesmoke;
+    color: white;
+    padding-top: 10vh;
+
+    background: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#contact input{
+    border-radius: 1rem;
+    border: none;
+    width: 20%;
+    height: 5vh;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+#contact input[type=submit]{
+    border-radius: 1rem;
+    border: none;
+    width: 20%;
+    height: 5vh;
+    background-color: green;
+    color: white;
+    padding: 0rem;
+    transition: 1s;
+}
+
+#contact input[type=submit]:hover{
+    border-radius: 1rem;
+    border: none;
+    width: 20%;
+    height: 5vh;
+    background-color: limegreen;
+    transition: .5s;
+}
+
+#stats{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    position: relative;
+    background-color: white;
+    padding-top: 10vh;
+}
+
+#stats .container .row .col h1 span{
+    color: green;
+    font-weight: bold
+}
+
+#stats .container .row .col button{
+    border-radius: 1rem;
+    border: none;
+    width: 30%;
+    height: 5vh;
+    background-color: green;
+    color: white;
+    transition: 1s;
+}
+
+#stats .container .row .col button:hover{
+    background-color: limegreen;
+    transition: .5s;
+}
+
+#stats .container .row .col .icon{
+    height: 2rem;
+}
+
+#offer{
+    width: 100%;
+    height: 70vh;
+    display: block;
+    position: relative;
+    background-color: whitesmoke;
+    padding-top: 10vh;
+}
+
+#offer .container .row .col .card{
+    width: 95%;
+    height: 40vh;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    transition: 1s;
+}
+
+#offer .container .row .col .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+}
+
+#offer .container .row .col .card-2{
+    background-color: green;
+    color: white;
+}
+
+#offer .container .row .col .card h1{
+    font-weight: bold;
+}
+
+#offer .container .row .col .card img{
+    width: 20%;
+    display: block;
+    position: relative;
+    margin: 2rem auto;
+}
+
+#offer .container .row .col .card p{
+    font-size: 1.5rem;
+}
+
+#offer .container .row .col .card button{
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    height: 5vh;
+    background-color: green;
+    color: white;
+    transition: 1s;
+}
+
+#offer .container .row .col .card-2 button{
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+#offer .container .row .col .card-2 button:hover{
+    background-color: whitesmoke !important;
+    transition: .5s;
+}
+
+#offer .container .row .col .card button:hover{
+    background-color: limegreen;
+    transition: .5s;
+}
+
+footer{
+    width: 100%;
+    height: 40vh;
+    display: block;
+    position: relative;
+    color: white;
+    padding-top: 5vh;
+
+    background: url("img/background-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .container .copyright{
+    /*text-align: center;*/
+    font-weight: bold;
+}
+
+footer .container .row .col h1 span{
+    color: limegreen;
+    font-weight: bold;
+}
+
+footer .container .row .col p span{
+    color: limegreen;
+    font-weight: bold;
+}
+
+footer .container .row .col .rate{
+    width: 8%;
+    float: left;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+footer .container .row .col .rate:hover{
+    width: 7%;
+    transition: .5s;
+}
